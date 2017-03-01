@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="rota.css">
+
+</head>
+<body>
+<div>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</div>
+    <div id="va" class="rota">
+        <div class="frame">
+            <a href="#">
+                <img src="images/1.jpg" />
+            </a>
+        </div>
+        <div class="frame">
+            <a href="#">
+                <img src="images/2.jpg" />
+            </a>
+        </div>
+        <div class="frame">
+            <a href="#">
+                <img src="images/3.jpg" />
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery.rota.js"></script>
+    <script>
+
+        jQuery(document).ready(function($){
+            var rotator = $('.rota').rota({
+                interval:3000,
+                transition : ".4s linear",
+                stopOnOver : true,
+                width : 600,
+                height: 400
+            });
+
+            $('#stop').click(function () {
+                rotator.stop();
+            })
+
+            $('#start').click(function () {
+                rotator.start();
+            })
+
+        })
+
+
+
+    </script>
+</body>
+</html>

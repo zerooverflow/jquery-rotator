@@ -1,0 +1,14 @@
+.rota{
+    position: relative;
+}
+.rota .frame{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+
+.rota .frame img{
+    max-width: 100%;
+    height:auto;
+}
